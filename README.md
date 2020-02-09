@@ -1,2 +1,0 @@
-# ConningProject
-Conning Display 
