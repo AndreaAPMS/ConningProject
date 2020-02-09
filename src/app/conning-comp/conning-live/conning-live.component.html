@@ -1,0 +1,34 @@
+<div class="container" [ngStyle] ="{'background-color':color_daynight}" >
+  <div [ngStyle] ="topleftstyle()" class="top-left">
+      <app-top-left [TWS$]='TWS$'[TWD$]='TWD$'[AWA$]='AWA$'[AWS$]='AWS$' [hres]='hres' [vres]='vres' ></app-top-left>	  
+      </div>
+  <div [ngStyle] ="topcenterstyle()" class="top-center">
+      <app-top-center [hres]='hres' [vres]='vres'></app-top-center>
+      </div>
+  <div [ngStyle] ="toprightstyle()" class="top-right">
+      <button  [ngStyle]=daynightstyle() type="button" class="btn btn-dark btn-lg " (click)="daynight()" id="bt">
+          {{label_daynight}}
+      </button>
+      <app-top-right [rot$]='rot$' [hres]='hres' [vres]='vres'></app-top-right>      
+  </div>
+      <div [ngStyle] ="midleftstyle()" class="mid-left">
+          <app-mid-left [hres]='hres' [vres]='vres'></app-mid-left>	  
+  </div>       
+  <div [ngStyle] ="midcenterstyle ()" class="mid-center">
+      <app-mid-center [hres]='hres' [vres]='vres' [value$]='heading$'></app-mid-center>
+      </div>
+  <div [ngStyle] ="midrightstyle()" class="mid-right">
+      <app-mid-right [hres]='hres' [vres]='vres'></app-mid-right>
+    
+      </div>
+  <div [ngStyle] ="bottomleftstyle()" class="bottom-left">
+      <app-bottom-left [hres]='hres' [vres]='vres'></app-bottom-left>
+      </div>
+  <div [ngStyle] ="bottomcenterstyle()" class="bottom-center">
+      <app-bottom-center [hres]='hres' [vres]='vres' [heading$]='heading$' [dpt$]='dpt$' [sog$]='sog$' [rot$]='rot$'></app-bottom-center>
+  </div>
+  <div [ngStyle] ="bottomrightstyle()" class="bottom-right">
+    <app-bottom-right [hres]='hres' [vres]='vres'></app-bottom-right>
+  </div>
+</div>
+      

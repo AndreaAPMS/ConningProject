@@ -1,0 +1,21 @@
+#primary{
+    position: absolute;
+    z-index: 1;
+    margin: 0px;
+    left: 0px;
+}
+#secondary{
+    position: absolute;
+    z-index: 3;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}
+#gradi{
+    position: absolute;
+    
+}
+#decimi{
+    position: absolute;
+    
+}

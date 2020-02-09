@@ -1,0 +1,21 @@
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]=(lat$|async) [longitude]=(lng$|async)>
+  <agm-marker 
+    [latitude]=(lat$|async) 
+    [longitude]=(lng$|async)
+    [label]="'A'"
+    [title]="'ciao'"
+    [iconUrl]="'/assets/images/cruise.svg'"
+    [openInfoWindow]="true">
+    <agm-info-window>
+        <strong>
+          Mega Express 4<br>
+          Heading : {{myshipdata.heading}}°<br>
+          Speed: {{myshipdata.sog}}Kn<br>
+          wind speed : {{myshipdata.aws}}Kn<br>
+          wind direction: {{myshipdata.awa}}°<br>
+        </strong>
+        </agm-info-window>
+    </agm-marker>
+</agm-map>

@@ -1,0 +1,17 @@
+<div id="shipspeed">
+        <span class="badge badge-pill badge-primary"  id="text_shipspeed_label">SOG</span>
+        <span class="badge badge-pill badge-primary" id="text_shipspeed">{{(sog$|async)}} kn</span>
+        <span class="badge badge-pill badge-primary" id="text_rot_label">ROT</span>
+        <span class="badge badge-pill badge-primary" id="text_rot">
+        <img *ngIf="red" src="/assets/images/pinpng.com-red-dot-png-337807.png"  id="logo" style="background-color: transparent; max-height: 45px; max-width: 45px; vertical-align: middle; text-align: center; align-items: center;">           
+        {{(rot$|async)}}
+        <img *ngIf="green" src="/assets/images/pngfind.com-dot-icon-png-2698936.png"  id="logo" style=" background-color: transparent; max-height: 45px; max-width: 45px; ">            
+
+        </span>
+</div>	
+<div  id="echosounder">
+        <span class="badge badge-pill badge-primary" id="text_echosounder_label">Depth</span>
+        <span class="badge badge-pill badge-primary" id="text_echosounder" >{{(dpt$|async)}} mt</span>
+        <span class="badge badge-pill badge-primary" id="text_rot_label">Heading</span>
+        <span class="badge badge-pill badge-primary" id="text_heading">{{(heading$|async)}}°</span>
+</div>

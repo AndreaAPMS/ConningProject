@@ -1,0 +1,102 @@
+<div [ngStyle]=truewinddirstyle() id="truewinddir">
+        <radial-gauge #truewinddir
+                title="True Wind"
+                units="direction"
+                type="radial-gauge"
+                width="320" 
+                height="320" 
+                min-value="0" 
+                max-value="360"
+                major-ticks="N,NE,E,SE,S,SW,W,NW,N" 
+                minor-ticks="10"  
+                ticks-angle="360"
+                start-angle="180" 
+                stroke-ticks="true" 
+                highlights="false" 
+                color-plate="#222"
+                color-major-ticks="#f5f5f5" 
+                color-minor-ticks="#ddd" 
+                color-numbers="#ccc"
+                color-needle="rgba(240, 128, 128, 1)" 
+                color-needle-end="rgba(255, 160, 122, .9)"
+                value-box="false"
+                value-text-shadow="false" 
+                color-circle-inner="#fff"
+                color-needle-circle-outer="#ccc"
+                needle-circle-size="15"
+                needle-circle-outer="false"
+                animation-rule="linear"
+                needle-type="line" 
+                needle-start="60"
+                needle-end="100"
+                needle-width="4" 
+                borders="true" 
+                border-inner-width="0" 
+                border-middle-width="0"
+                border-outer-width="0" 
+                color-border-outer="#ccc" 
+                color-border-outer-end="#ccc"
+                color-needle-shadow-down="#222" 
+                border-shadow-width="0" 
+                font-value="Led"
+                [value]="(TWD$ | async)"
+                >
+        </radial-gauge>
+</div>
+<div [ngStyle]=relativewinddirstyle() id="relativewinddir">
+        <radial-gauge #relativewind
+                id="Rel_Wind_Dir" 
+                width="320" 
+                height="320" 
+                title="Relative Wind"
+                units="direction"
+                type="radial-gauge"
+                min-value="0" 
+                max-value="360"
+                major-ticks="0,45,90,135,180,-135,-90,-45,0" 
+                stroke-ticks="true"
+                highlights=	'[
+                     { "from": 0, "to": 180, "color": "green" }
+                      ]'
+                minor-ticks="10"  
+                ticks-angle="360"
+                start-angle="180" 
+                stroke-ticks="true" 
+                highlights="false" 
+                color-plate="#222"
+                color-major-ticks="#f5f5f5" 
+                color-minor-ticks="#ddd" 
+                color-numbers="#ccc"
+                color-needle="rgba(240, 128, 128, 1)" 
+                color-needle-end="rgba(255, 160, 122, .9)"
+                value-box="false"
+                value-text-shadow="false" 
+                color-circle-inner="#fff"
+                color-needle-circle-outer="#ccc"
+                needle-circle-size="15"
+                needle-circle-outer="false"
+                animation-rule="linear"
+                needle-type="line" 
+                needle-start="60"
+                needle-end="100"
+                needle-width="4" 
+                borders="true" 
+                border-inner-width="0" 
+                border-middle-width="0"
+                border-outer-width="0" 
+                color-border-outer="#ccc" 
+                color-border-outer-end="#ccc"
+                color-needle-shadow-down="#222" 
+                border-shadow-width="0" 
+                font-value="Led"
+                [value]="(AWA$ | async)"
+                >
+        </radial-gauge>
+</div>
+<div [ngStyle]=truewindspeedstyle() id="truewindspeed" class="container">       
+        <span [ngStyle]=truewindspeedstyle() id="text_truewindspeed"
+                class="badge badge-warning" id="text_truewindspeed">{{(TWS$ | async)}} Kn</span>
+</div>
+<div [ngStyle]=relativewindspeedstyle() id="relativewindspeed" class="container">
+        <span [ngStyle]=relativewindspeedstyle() class="badge badge-warning" id="text_relativewindspeed">{{(AWS$ | async)}} Kn</span>
+</div>

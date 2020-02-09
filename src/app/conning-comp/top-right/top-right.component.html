@@ -1,0 +1,38 @@
+<div>
+        <radial-gauge
+        #rot
+        id="ROT" 
+        type="radial-gauge"
+        width="370"
+        height="370"
+        units="°/min"
+        min-value="-40"
+        start-angle="135"
+        ticks-angle="90"
+        value-box="false"
+        max-value="40"
+        major-ticks="-40,-30,-20,-10,-5,0,5,10,20,30,40"
+        minor-ticks="2"
+        stroke-ticks="true"
+        highlights=	'[
+                     { "from": 0, "to": 40, "color": "red" },
+                     { "from": -40, "to": 0, "color": "green" }
+                      ]'
+        title="Rate Of turn"  
+        color-plate="transparent"
+        border-shadow-width="0"
+        borders="false"
+        needle-type="line"
+        needle-width="4"
+        needle-circle-size="7"
+        needle-circle-outer="true"
+        needle-circle-inner="true"
+        animation-duration="15"
+        animation-rule="linear"
+        animation-target="needle"
+        needle-start="60"
+        needle-end="99"
+        value = "{{(rot$|async)}}"
+></radial-gauge>
+
+</div>

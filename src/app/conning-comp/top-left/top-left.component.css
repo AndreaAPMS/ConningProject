@@ -1,0 +1,37 @@
+#truewinddir{
+    position: absolute;
+  }
+#relativewinddir{
+    position: relative;
+  }
+
+#truewindspeed{
+    position: absolute;
+	background-color: transparent;
+  	text-align: center;
+  	vertical-align: middle;
+}
+#text_truewindspeed{
+	
+	text-align: center;
+	
+	background-color: transparent;	
+}
+
+#relativewindspeed{
+    position: absolute;
+	background-color: transparent;
+ 	
+  	text-align: center;
+  	vertical-align: middle;
+}
+
+#text_relativewindspeed{
+	
+	text-align: center;
+	
+	background-color: transparent;	
+}
+.badge-warning{
+	background-color: gray;
+}

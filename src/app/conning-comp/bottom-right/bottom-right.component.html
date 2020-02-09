@@ -1,0 +1,35 @@
+<radial-gauge
+        id="STBD_Rudder" 
+        font-number-size ="100"
+        type="radial-gauge"
+        width="370"
+        height="370"
+        units="degrees"
+        min-value="-45"
+        start-angle="315"
+        ticks-angle="90"
+        value-box="false"
+        max-value="45"
+        major-ticks="45,30,20,10,0,-10,-20,-30,-45"
+        minor-ticks="5"
+        stroke-ticks="False"
+        highlights=	'[
+                        { "from": 0, "to": 45, "color": "red" },
+                        { "from": -45, "to": 0, "color": "green" }
+                      ]'
+        title="Stbd Rudder"  
+        color-plate="transparent"
+        border-shadow-width="0"
+        borders="false"
+        needle-type="line"
+        needle-width="4"
+        needle-circle-size="7"
+        needle-circle-outer="true"
+        needle-circle-inner="true"
+        animation-duration="1500"
+        animation-rule="linear"
+        animation-target="needle"
+        needle-start="60"
+        needle-end="99"
+        glow ="true"
+></radial-gauge>

@@ -1,0 +1,58 @@
+<div [ngStyle]="portpitchstyle()" id="Port_Pitch">
+        <linear-gauge
+            #port_pitch
+            color-plate="gray"
+            id="Canv_Port_Pitch" 
+            width="160"
+            height="380"
+            border-radius="20"
+            borders="0"
+            bar-begin-circle="false"
+            title="Port Pitch"
+            units="%"
+            minor-ticks="10"
+            value="-0"
+            min-value="-100"
+            max-value="100"
+            major-ticks="-100,-75,-50, -25, -10, 0, 10, 25, 50,75,100"
+            highlights=	'[
+                                {"from":-100, "to":0, "color": "red"},
+                                {"from": 0, "to": 100, "color": "green"}
+                                ]'	
+            tick-side="left"
+            number-side="left"
+            needle-side="left"
+            animation-rule="bounce"
+            animation-duration="750"
+            bar-stroke-width="5"
+            value-box-border-radius="0"
+            value-text-shadow="false"
+        ></linear-gauge>
+</div>
+<div [ngStyle]="portrpmstyle() " id="Port_RPM">
+        <linear-gauge
+            #port_rpm
+            id="Canv_Port_RPM" 
+            type="linear-gauge"
+            width="160"
+            height="380"
+            border-radius="20"
+            borders="0"
+            bar-begin-circle="false"
+            title="Port RPM"
+            units="RPM"
+            minor-ticks="10"
+            value="0"
+            min-value="0"
+            max-value="500"
+            major-ticks="0,100,200,300,400,500"   
+            tick-side="left"
+            number-side="left"
+            needle-side="left"
+            animation-rule="bounce"
+            animation-duration="750"
+            bar-stroke-width="5"
+            value-box-border-radius="0"
+            value-text-shadow="false"
+        ></linear-gauge>
+</div>

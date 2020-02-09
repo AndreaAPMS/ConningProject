@@ -1,0 +1,55 @@
+.top-left{    
+  margin: 0px;
+  position: absolute;
+}
+.top-center{
+  position: absolute;
+  vertical-align: middle;
+  z-index: 3;
+}
+.top-right{
+  position: absolute;
+  z-index: 5;
+}
+.mid-left{
+  
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  
+  z-index: 3;
+}
+.mid-center{
+  position: absolute;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 0;
+}
+.mid-right{
+  position: absolute;
+  z-index: 3;
+  align-content: center;
+  vertical-align: middle;
+}
+.bottom-left{
+  background-color: whitesmoke;
+  
+  position: absolute;
+  
+  text-align: center;
+}
+.bottom-center{
+  position: absolute;
+  
+  z-index: 4;
+}
+.bottom-right{
+  background-color: violet ;
+  position: absolute;
+  
+  text-align: center;
+}
+#bt{
+  margin-top: 50px;
+  margin-left: 50px;
+}
